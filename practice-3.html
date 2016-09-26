@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="answer"></div>
+
+	<script>
+		// Prompt the user for a number. 
+		theInput = prompt("Give me a number:");
+
+		//If the user enters something that is not a number, print "You must enter a number".
+		if (isNaN(theInput)){
+			console.log("You must enter a number.");
+				}
+
+		// If the user enters a negative number, print "Number must be positive".
+		else if (theInput < 0){
+			console.log("Number must be positive.");
+		} else {
+		
+		var i = 0;
+			for(i = 0; i <= theInput; i += 2) {
+    			console.log(i);
+				}
+		}
+		var answer = "";
+		// ???? I didn't undestand what this did: Use parseInt(theInput, 10) to retrieve the value of variable theInput as an integer. It would fix it if someone entered a decimal number?
+		// Hint: Use isNaN(theInput) to determine if theInput is not a number (NaN)
+
+		document.getElementById('answer').innerHTML = answer;
+	</script>
+</body>
+</html>
